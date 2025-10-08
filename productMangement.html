@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            color: #ccc;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: black;
+        }
+        .button-create {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-box input {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            width: 200px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: lavend;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: purple;
+        }
+        tr:nth-child(even) {
+            background-color:  purple;
+        }
+        tr:hover {
+            background-color: purple;
+        }
+        .btn-edit {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .btn-delete {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .rating {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .price {
+            color: #28a745;
+        }
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #aaa;
+        }
+        .breadcrumb a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="breadcrumb">
+            YOU ARE HERE &gt; <a href="#">App</a> &gt; <a href="#">Ecommerce</a> &gt; Management
+        </div>
+        <h1>Product - <strong>Management</strong></h1>
+        <button class="button-create">Create Product</button>
+        <div class="search-box" style="float: right;">
+            <input type="text" placeholder="Search..." />
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>IMAGE</th>
+                <th>TITLE</th>
+                <th>SUBTITLE</th>
+                <th>PRICE($)</th>
+                <th>RATING</th>
+                <th>API</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fblinkit.com%2Fprn%2Fmamaearth-beetroot-gentle-face-wash%2Fprid%2F553142%3Fsrsltid%3DAfmBOopgSuFVRPLkpfUUZ-ifuhGqJrk2l31418bDdavAKr61t2NlhhYb&psig=AOvVaw1X8_HB0xZPg7uyLW_-196J&ust=1757932342613000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLDp-7mG2I8DFQAAAAAdAAAAABAE" alt="mamaerthface wash"></td>
+                <td><a href="#" style="color: #17a2b8;">facewash</a></td>
+                <td>facewash</td>
+                <td class="price">176</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biotique.com%2Fproducts%2Fmorning-nectar-nourish-hydrate-moisturizing-cream%3Fsrsltid%3DAfmBOopTXFDQF-99p7Xh-E0KbpLPQ-u-7Q2rYi78S6DFu5sXjjNr8CV0&psig=AOvVaw3biYfoYQBK9OVviS9Zi41f&ust=1757932433518000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMiv2-WG2I8DFQAAAAAdAAAAABAE" alt="moisturizer"></td>
+                <td><a href="#" style="color: #17a2b8;">moisturizer for face</a></td>
+                <td>moisturizer</td>
+                <td class="price">245</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nykaa.com%2Frocia-by-regal-beige-women-casual-t-strap-flat-sandals%2Fp%2F16534822&psig=AOvVaw3e6Pbb5imShYX5F_682xBJ&ust=1757932534194000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjL2JeH2I8DFQAAAAAdAAAAABAE" alt="Flat sands"></td>
+                <td><a href="#" style="color: #17a2b8;">Flat sandals</a></td>
+                <td>Trainers In White</td>
+                <td class="price">355</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcalcetto.in%2Fproducts%2Fclt-0992-white%3Fsrsltid%3DAfmBOor05KLFL3xeQOwxa98L-sqi2bS3pkWM8lEQXnwb8G3UklNBR0xJ&psig=AOvVaw3mBkkG2hA2nz1zNki39BDy&ust=1757932580742000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCICLnaqH2I8DFQAAAAAdAAAAABAE" alt="shoes"></td>
+                <td><a href="#" style="color: #17a2b8;">shoes</a></td>
+                <td>womens White shoes </td>
+                <td class="price">476</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><img src="https://via.placeholder.com/60" alt="Boots"></td>
+                <td><a href="#" style="color: #17a2b8;">Boots</a></td>
+                <td>Trainers In Blue</td>
+                <td class="price">45</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><img src="https://www.google.com/imgres?q=red%20heels%20for%20women&imgurl=https%3A%2F%2Fassets.myntassets.com%2Fdpr_1.5%2Cq_30%2Cw_400%2Cc_limit%2Cfl_progressive%2Fassets%2Fimages%2F29999192%2F2024%2F6%2F20%2F28251fee-1a2f-4ad0-a34a-99aab9d42f5f1718874355288GNISTSlimHeeledPumpswithBuckles1.jpg&imgrefurl=https%3A%2F%2Fwww.myntra.com%2Fred-stiletto-heels&docid=ujc0ASms_WRb_M&tbnid=WcfwxTPLlIMPSM&vet=12ahUKEwiLtbTih9iPAxWn3TgGHeeHCFcQM3oECCAQAA..i&w=600&h=800&hcb=2&ved=2ahUKEwiLtbTih9iPAxWn3TgGHeeHCFcQM3oECCAQAA" alt="Heels"></td>
+                <td><a href="#" style="color: #17a2b8;">Heels</a></td>
+                <td>Trainers In Red</td>
+                <td class="price">578</td>
+                <td class="rating">4.6 ★</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
